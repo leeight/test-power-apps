@@ -27,6 +27,20 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
+  "combobox": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/combobox",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "combobox",
+    "OverridableProperties": {},
+    "Version": "2.4.0"
+  },
   "form": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -82,6 +96,20 @@
     "Name": "groupContainer",
     "OverridableProperties": {},
     "Version": "1.1.0"
+  },
+  "icon": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/icon",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": false,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": true,
+    "LastModifiedTimestamp": "0",
+    "Name": "icon",
+    "OverridableProperties": {},
+    "Version": "2.5.0"
   },
   "label": {
     "CustomGroupControlTemplateName": "",

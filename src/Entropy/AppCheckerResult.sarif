@@ -14,6 +14,156 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Objective List Screen'.Container1.'Objective List'.AccessibleLabel"
                 }
               ],
@@ -164,48 +314,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2"
+                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Name_DataCard1.DataCardValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Screen2",
-                "type": "Screen2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Low"
-          },
-          "ruleId": "acc-ReadableScreenNameNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.AccessibleLabel",
+                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Name_DataCard1.DataCardValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2"
+                "module": "Key Result Form Screen",
+                "type": "'Key Result Form Screen'.'Key Result Form'.Name_DataCard1.DataCardValue1"
               }
             }
           ],
@@ -223,49 +344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.TabIndex"
+                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Objective_DataCard1.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen2",
-                "type": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'.AccessibleLabel",
+                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Objective_DataCard1.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'"
+                "module": "Key Result Form Screen",
+                "type": "'Key Result Form Screen'.'Key Result Form'.Objective_DataCard1.DataCardValue4"
               }
             }
           ],
@@ -283,19 +374,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.AccessibleLabel"
+                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Weight_DataCard1.DataCardValue6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.AccessibleLabel",
+                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Weight_DataCard1.DataCardValue6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Screen2",
-                "type": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'"
+                "module": "Key Result Form Screen",
+                "type": "'Key Result Form Screen'.'Key Result Form'.Weight_DataCard1.DataCardValue6"
               }
             }
           ],
@@ -307,36 +398,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Screen2",
-                "type": "Screen2.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
         },
         {
           "locations": [
@@ -366,7 +427,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 2
         }
       ],
       "tool": {
@@ -406,23 +467,6 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
-              }
-            },
-            {
-              "id": "acc-ReadableScreenNameNeeded",
-              "messageStrings": {
-                "issue": {
-                  "text": "Revise screen name"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Give the screen  a title that describes what's on the screen or what it's used for."
-                ],
-                "level": "Low",
-                "primaryCategory": "accessibility",
-                "whyFix": "People who are blind, have low vision, or a reading disability rely on screen titles to navigate using the screen reader. "
               }
             },
             {

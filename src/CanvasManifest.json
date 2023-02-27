@@ -116,6 +116,7 @@
   },
   "ScreenOrder": [
     "Objective List Screen",
-    "Screen2"
+    "OKR Home",
+    "Key Result Form Screen"
   ]
 }

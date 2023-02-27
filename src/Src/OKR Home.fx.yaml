@@ -1,4 +1,4 @@
-"Screen2 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"'OKR Home' As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
 
     ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
         Height: =1366
@@ -48,7 +48,7 @@
                     Width: =638
                     X: =65
                     Y: =24
-                    ZIndex: =7
+                    ZIndex: =1
 
                 "'Objective Index' As text":
                     Align: =Align.Center
@@ -67,7 +67,7 @@
                     Width: =42
                     X: =19
                     Y: =21
-                    ZIndex: =8
+                    ZIndex: =2
 
                 "'Key Result List_1' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
                     Fill: =RGBA(255, 255, 255, 1)
@@ -80,7 +80,7 @@
                     Width: =638
                     X: =65
                     Y: =71
-                    ZIndex: =9
+                    ZIndex: =3
 
                     "'KR Title_1' As label":
                         Height: =Self.Size * 1.8
@@ -125,7 +125,7 @@
                     Visible: =CountRows('Key Result List_1'.AllItems) = 0
                     X: =252
                     Y: =71
-                    ZIndex: =10
+                    ZIndex: =4
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(255, 191, 0, 1)

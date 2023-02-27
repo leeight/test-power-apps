@@ -1,0 +1,273 @@
+"'Key Result Form Screen' As screen":
+    OnVisible: =NewForm('Key Result Form')
+
+    "'Key Result Form' As form":
+        DataSource: ='Key Results'
+        Height: =415
+        NumberOfColumns: =1
+        Width: =768
+        Y: =40
+        ZIndex: =1
+
+        Objective_DataCard1 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="crad3_Objective"
+            Default: =ThisItem.Objective
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Key Results'],DataSourceInfo.DisplayName,"crad3_Objective")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue4.Selected
+            Width: =768
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey4 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue4 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["crad3_name"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Key Results'].crad3_Objective)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["crad3_name"]
+                SearchItems: =Search(Choices([@'Key Results'].crad3_Objective),DataCardValue4.SearchText,"crad3_name")
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+                ZIndex: =2
+
+            ErrorMessage3 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue4.Y + DataCardValue4.Height
+                ZIndex: =3
+
+            StarVisible3 As label:
+                Align: =Align.Center
+                Height: =DataCardKey4.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey4.Y
+                ZIndex: =4
+
+        Progress_DataCard2 As typedDataCard.percentageViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="crad3_progress"
+            Default: =ThisItem.Progress
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'Key Results'],DataSourceInfo.DisplayName,"crad3_progress")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =60
+            Required: =false
+            Width: =768
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey7 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            Rectangle1 As rectangle:
+                Height: =40
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                ZIndex: =2
+
+            RectanglePercentage1 As rectangle:
+                Height: =Rectangle1.Height
+                Width: =If(Parent.Default < Parent.Min, 0, Parent.Default > Parent.Max, Rectangle1.Width, Rectangle1.Width * ((Parent.Default - Parent.Min) / (Parent.Max - Parent.Min)))
+                X: =Rectangle1.X
+                Y: =Rectangle1.Y
+                ZIndex: =3
+
+            PercentageLabel1 As label:
+                Align: =If(RectanglePercentage1.Width < 160, Align.Left, Align.Right)
+                DisplayMode: =Parent.DisplayMode
+                Height: =Rectangle1.Height
+                Text: =Round(((Parent.Default - Parent.Min) / (Parent.Max - Parent.Min)) * 100, 2) & "%"
+                Width: =Max(RectanglePercentage1.Width, 160)
+                Wrap: =false
+                X: =Rectangle1.X
+                Y: =Rectangle1.Y
+                ZIndex: =4
+
+        Weight_DataCard1 As typedDataCard.numberEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="crad3_weight"
+            Default: =ThisItem.Weight
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Key Results'],DataSourceInfo.DisplayName,"crad3_weight")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =Value(DataCardValue6.Text)
+            Width: =768
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue6 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Format: =TextFormat.Number
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                ZIndex: =2
+
+            ErrorMessage5 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue6.Y + DataCardValue6.Height
+                ZIndex: =3
+
+            StarVisible5 As label:
+                Align: =Align.Center
+                Height: =DataCardKey6.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6.Y
+                ZIndex: =4
+
+        Name_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="crad3_name"
+            Default: =ThisItem.Name
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Key Results'],DataSourceInfo.DisplayName,"crad3_name")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Key Results'], DataSourceInfo.MaxLength, "crad3_name")
+            Required: =true
+            Update: =DataCardValue1.Text
+            Width: =768
+            X: =0
+            Y: =1
+            ZIndex: =2
+
+            DataCardKey1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1.Y + DataCardKey1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1.Y + DataCardValue1.Height
+                ZIndex: =3
+
+            StarVisible1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1.Y
+                ZIndex: =4
+
+    "'Cancel Icon' As icon.Cancel":
+        Icon: =Icon.Cancel
+        X: =152
+        Y: =455
+        ZIndex: =3
+
+    "'OK Icon' As icon.Check":
+        Icon: =Icon.Check
+        X: =35
+        Y: =455
+        ZIndex: =4
+
