@@ -1,0 +1,199 @@
+"'Objective List Screen' As screen":
+
+    Container1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =768
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        PaddingLeft: =10
+        PaddingRight: =10
+        Width: =768
+        ZIndex: =3
+
+        "'Objective List' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+            Height: =0
+            Items: =Objectives
+            Layout: =Layout.Vertical
+            LayoutMinHeight: =287
+            LayoutMinWidth: =320
+            TemplatePadding: =0
+            TemplateSize: =458
+            Width: =1300
+            X: =66
+            Y: =87
+            ZIndex: =1
+
+            Title1 As label:
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Name
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 104
+                X: =1
+                Y: =44
+                ZIndex: =2
+
+            Subtitle1 As label:
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.'Created On'
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Title1.Width
+                X: =1
+                Y: =Title1.Y + Title1.Height + 4
+                ZIndex: =3
+
+            Separator1 As rectangle:
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - 1
+                ZIndex: =5
+
+            "'Key Result List' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                Fill: =RGBA(141, 198, 63, 1)
+                Height: =302
+                Items: =Filter('Key Results', Objective.Name = ThisItem.Name)
+                Layout: =Layout.Vertical
+                TemplatePadding: =0
+                TemplateSize: =82
+                Width: =1365
+                X: =1
+                Y: =156
+                ZIndex: =6
+
+                "'KR Title' As label":
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.Name
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 104
+                    X: =1
+                    Y: =44
+                    ZIndex: =2
+
+                Separator3 As rectangle:
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - 1
+                    ZIndex: =5
+
+                "'KR Progress' As label":
+                    Align: =Align.Right
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Progress
+                    Width: =1
+                    Y: =42
+                    ZIndex: =6
+
+                "'KR Weight' As label":
+                    Align: =Align.Right
+                    OnSelect: =Select(Parent)
+                    Text: =ThisItem.Weight
+                    Width: =1
+                    Y: =42
+                    ZIndex: =7
+
+        "'Add Objective Btn' As button":
+            OnSelect: =NewForm('Objective Form')
+            Text: ="Add Objective"
+            X: =754
+            Y: =588
+            ZIndex: =2
+
+        "'Objective Form' As form":
+            DataSource: =Objectives
+            FillPortions: =0
+            Height: =124
+            LayoutMinHeight: =250
+            LayoutMinWidth: =400
+            X: =63
+            Y: =644
+            ZIndex: =3
+
+            Name_DataCard2 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="crad3_name"
+                Default: =ThisItem.Name
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@Objectives],DataSourceInfo.DisplayName,"crad3_name")
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@Objectives], DataSourceInfo.MaxLength, "crad3_name")
+                Required: =true
+                Update: =DataCardValue3.Text
+                Width: =249
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+                DataCardKey3 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue3 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey3.Y + DataCardKey3.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage2 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue3.Y + DataCardValue3.Height
+                    ZIndex: =3
+
+                StarVisible2 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey3.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey3.Y
+                    ZIndex: =4
+
+        "'Submit Form Btn' As button":
+            OnSelect: =SubmitForm('Objective Form')
+            Text: ="Submit"
+            ZIndex: =4
+

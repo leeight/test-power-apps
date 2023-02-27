@@ -1,0 +1,138 @@
+"Screen2 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+
+    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =1366
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =768
+        ZIndex: =1
+
+        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(141, 198, 63, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =2
+
+        MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =3
+
+            "Gallery2 As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":
+                DelayItemLoading: =true
+                Height: =900
+                Items: =Objectives
+                Layout: =Layout.Vertical
+                LayoutMinHeight: =450
+                LayoutMinWidth: =320
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =Min(220, Self.Height - 60)
+                ZIndex: =3
+
+                "'Objective Title' As label":
+                    Height: =36
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.Name
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =638
+                    X: =65
+                    Y: =24
+                    ZIndex: =7
+
+                "'Objective Index' As text":
+                    Align: =Align.Center
+                    BorderThickness: =0
+                    Color: =RGBA(255, 255, 255, 1)
+                    Default: ="A"
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(78, 131, 253, 1)
+                    Height: =39
+                    OnSelect: =Select(Parent)
+                    RadiusBottomLeft: =15
+                    RadiusBottomRight: =15
+                    RadiusTopLeft: =15
+                    RadiusTopRight: =15
+                    Size: =20
+                    Width: =42
+                    X: =19
+                    Y: =21
+                    ZIndex: =8
+
+                "'Key Result List_1' As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =139
+                    Items: =Filter('Key Results', Objective.Name = ThisItem.Name)
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =45
+                    Visible: =CountRows('Key Result List_1'.AllItems) > 0
+                    Width: =638
+                    X: =65
+                    Y: =71
+                    ZIndex: =9
+
+                    "'KR Title_1' As label":
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Name
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =Parent.TemplateWidth - 104
+                        Y: =6
+                        ZIndex: =2
+
+                    Separator3_1 As rectangle:
+                        Height: =1
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - 1
+                        ZIndex: =5
+
+                    "'KR Progress_1' As label":
+                        Align: =Align.Right
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.Progress
+                        Width: =1
+                        Y: =42
+                        ZIndex: =6
+
+                    "'KR Weight_1' As label":
+                        Align: =Align.Right
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.Weight
+                        Width: =1
+                        Y: =42
+                        ZIndex: =7
+
+                Button1 As button:
+                    Color: =RGBA(0, 0, 0, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Text: ="+ Key Result"
+                    Visible: =CountRows('Key Result List_1'.AllItems) = 0
+                    X: =252
+                    Y: =71
+                    ZIndex: =10
+
+        FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(255, 191, 0, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =4
+

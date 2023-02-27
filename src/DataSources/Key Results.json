@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crad3_keyresults",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crad3_keyresult",
+    "MaxGetRowsCount": 500,
+    "Name": "Key Results",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crad3_keyresult_AsyncOperations": "System Jobs",
+      "crad3_keyresult_BulkDeleteFailures": "Bulk Delete Failures",
+      "crad3_keyresult_DuplicateBaseRecord": "Duplicate Records (crad3_keyresult_DuplicateBaseRecord)",
+      "crad3_keyresult_DuplicateMatchingRecord": "Duplicate Records (crad3_keyresult_DuplicateMatchingRecord)",
+      "crad3_keyresult_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crad3_keyresult_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crad3_keyresult_ProcessSession": "Process Sessions",
+      "crad3_keyresult_SyncErrors": "Sync Errors",
+      "crad3_keyresultid": "Key Result",
+      "crad3_name": "Name",
+      "crad3_Objective": "Objective",
+      "crad3_progress": "Progress",
+      "crad3_weight": "Weight",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Key Results",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Key Results (Views)",
+    "Name": "_crad3_keyresult_views",
+    "RelatedEntityName": "Key Results",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "53d3a355-c50a-4ed0-8f7e-9b20c5788270": "Key Result Advanced Find View",
+      "77fe4065-9af2-438e-b8c4-01cc46fdb06a": "Key Result Lookup View",
+      "bc3c8967-2b5d-4cf4-ab38-0cf797f9286d": "Key Result Associated View",
+      "d202a684-fdf1-4328-ab0b-bb2bd5f84cb0": "Active Key Results",
+      "fc7c572d-9484-4353-8370-881ccf9d2776": "Inactive Key Results"
+    }
+  },
+  {
+    "DisplayName": "Status (Key Results)",
+    "Name": "crad3_keyresult_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Key Results"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Key Results",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Key Results)",
+    "Name": "crad3_keyresult_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Key Results"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Key Results",
+    "Type": "OptionSetInfo"
+  }
+]

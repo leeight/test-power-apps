@@ -1,0 +1,18 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_crad3_objective_forms",
+      "Namespace": "Objectives (Forms)",
+      "Values": {
+        "Information": "a32a2107-1b26-4a3b-8514-ef9930e31f6f"
+      }
+    },
+    {
+      "Kind": "default.cds_crad3_keyresult_forms",
+      "Namespace": "Key Results (Forms)",
+      "Values": {
+        "Information": "a5f9ece0-f912-446c-8934-aec56186d11b"
+      }
+    }
+  ]
+}

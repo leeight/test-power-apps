@@ -1,0 +1,98 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crad3_objectives",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crad3_objective",
+    "MaxGetRowsCount": 500,
+    "Name": "Objectives",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "crad3_name": "Name",
+      "crad3_objective_AsyncOperations": "System Jobs",
+      "crad3_objective_BulkDeleteFailures": "Bulk Delete Failures",
+      "crad3_Objective_crad3_Objective_crad3_Key": "Key Results",
+      "crad3_objective_DuplicateBaseRecord": "Duplicate Records (crad3_objective_DuplicateBaseRecord)",
+      "crad3_objective_DuplicateMatchingRecord": "Duplicate Records (crad3_objective_DuplicateMatchingRecord)",
+      "crad3_objective_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crad3_objective_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crad3_objective_ProcessSession": "Process Sessions",
+      "crad3_objective_SyncErrors": "Sync Errors",
+      "crad3_objectiveid": "Objective",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Objectives",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Objectives (Views)",
+    "Name": "_crad3_objective_views",
+    "RelatedEntityName": "Objectives",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "14a40d6b-afdc-483e-b36c-8b3b9e3b56b8": "Objective Advanced Find View",
+      "4f932910-870c-4728-a337-f9ff7149c288": "Inactive Objectives",
+      "588d1919-181f-4c30-a3ff-956ad3683e6c": "Objective Lookup View",
+      "810be51b-80fa-4b13-a850-22e3774ca67e": "Objective Associated View",
+      "fc896e4d-e93c-4342-8b5b-732dfc7397be": "Active Objectives"
+    }
+  },
+  {
+    "DisplayName": "Status (Objectives)",
+    "Name": "crad3_objective_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Objectives"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Objectives",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Objectives)",
+    "Name": "crad3_objective_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Objectives"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Objectives",
+    "Type": "OptionSetInfo"
+  }
+]
