@@ -121,6 +121,7 @@
                 Button1 As button:
                     Color: =RGBA(0, 0, 0, 1)
                     Fill: =RGBA(255, 255, 255, 1)
+                    OnSelect: =Navigate('Key Result Form Screen')
                     Text: ="+ Key Result"
                     Visible: =CountRows('Key Result List_1'.AllItems) = 0
                     X: =252

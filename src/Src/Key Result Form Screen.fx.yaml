@@ -261,12 +261,14 @@
 
     "'Cancel Icon' As icon.Cancel":
         Icon: =Icon.Cancel
+        OnSelect: =Back()
         X: =152
         Y: =455
         ZIndex: =3
 
     "'OK Icon' As icon.Check":
         Icon: =Icon.Check
+        OnSelect: =SubmitForm('Key Result Form')
         X: =35
         Y: =455
         ZIndex: =4
