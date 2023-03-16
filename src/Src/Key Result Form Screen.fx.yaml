@@ -268,7 +268,7 @@
 
     "'OK Icon' As icon.Check":
         Icon: =Icon.Check
-        OnSelect: =SubmitForm('Key Result Form')
+        OnSelect: =SubmitForm('Key Result Form');Back();
         X: =35
         Y: =455
         ZIndex: =4

@@ -14,156 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "OKR Home",
-                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "OKR Home",
-                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "OKR Home",
-                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "OKR Home",
-                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "OKR Home",
-                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Objective List Screen'.Container1.'Objective List'.AccessibleLabel"
                 }
               ],
@@ -314,19 +164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Name_DataCard1.DataCardValue1.AccessibleLabel"
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Name_DataCard1.DataCardValue1.AccessibleLabel",
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Key Result Form Screen",
-                "type": "'Key Result Form Screen'.'Key Result Form'.Name_DataCard1.DataCardValue1"
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2"
               }
             }
           ],
@@ -338,6 +188,126 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Objective Index'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "OKR Home",
+                "type": "'OKR Home'.ScreenContainer1.MainSectionContainer1.Gallery2.'Key Result List_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -357,6 +327,36 @@
                 "member": "AccessibleLabel",
                 "module": "Key Result Form Screen",
                 "type": "'Key Result Form Screen'.'Key Result Form'.Objective_DataCard1.DataCardValue4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Name_DataCard1.DataCardValue1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Key Result Form Screen'.'Key Result Form'.Name_DataCard1.DataCardValue1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Key Result Form Screen",
+                "type": "'Key Result Form Screen'.'Key Result Form'.Name_DataCard1.DataCardValue1"
               }
             }
           ],
@@ -607,7 +607,7 @@
               }
             }
           ],
-          "version": "1.327"
+          "version": "1.330"
         }
       }
     }
