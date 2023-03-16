@@ -27,7 +27,19 @@
             "Gallery2 As gallery.'BrowseLayout_Flexible_NewsFeed_ver4.0'":
                 DelayItemLoading: =true
                 Height: =900
-                Items: =Objectives
+                Items: |-
+                    =ForAll(
+                        Sequence(CountRows(Objectives)),
+                        Patch(
+                            Last(
+                                FirstN(
+                                    Objectives,
+                                    Value
+                                )
+                            ),
+                            {RowNumber: Value}
+                        )
+                    )
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =450
                 LayoutMinWidth: =320
@@ -45,8 +57,8 @@
                     PaddingTop: =0
                     Text: =ThisItem.Name
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =638
-                    X: =65
+                    Width: =608
+                    X: =95
                     Y: =24
                     ZIndex: =1
 
@@ -54,7 +66,7 @@
                     Align: =Align.Center
                     BorderThickness: =0
                     Color: =RGBA(255, 255, 255, 1)
-                    Default: ="A"
+                    Default: ="O" & ThisItem.RowNumber
                     DisplayMode: =DisplayMode.View
                     Fill: =RGBA(78, 131, 253, 1)
                     Height: =39
@@ -64,7 +76,7 @@
                     RadiusTopLeft: =15
                     RadiusTopRight: =15
                     Size: =20
-                    Width: =42
+                    Width: =62
                     X: =19
                     Y: =21
                     ZIndex: =2
